@@ -1,0 +1,23 @@
+# ativar virtual env:
+# no pronpt entrar na pasta do projeto
+cd venv
+cd Scripts
+activate
+
+# ativar venv no Linux e MAC
+. venv/bin/activate
+
+# Criar o projeto Django (qualquer Sistema operacional)
+django-admin startproject blog     ##blog ou nome do projeto
+
+# Rodar o projeto Django
+python manage.py runserver 
+
+# Para parar o servidor
+ctrl + c
+
+# Criar tabelas no banco de dados 
+python manage.py migrate
+
+# Criar superusuario
+python manage.py createsuperuser
