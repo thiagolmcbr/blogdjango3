@@ -1,0 +1,31 @@
+<h1> Blogiii</h1>
+
+{{ name }}
+
+<ol>
+{% for item in lista_tecnologias %}
+    <li>{{item}}</li>
+{% endfor %}
+</ol>
+
+
+<ol>
+{% for item in lista_tecnologias %}
+
+    {% if item == 'Django' %}
+        <li><b>{{ item}} </b></li>  
+    {% else %}
+
+    {% endif %}
+
+{% endfor %}
+</ol>
+
+<ul>
+{% for post in posts %}
+    <h2>{{ post.title }}</h2>
+    <h3>{{ post.sub_title }}</h3>
+    <p>{{ post.content }}</p>
+{% endfor %}
+
+</ul>
